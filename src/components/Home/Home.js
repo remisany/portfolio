@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {ReactSVG} from 'react-svg';
 import {Parallax, ParallaxProvider} from 'react-scroll-parallax';
 
@@ -10,6 +10,10 @@ import Face from '../../assets/character/face.svg';
 import HomeIcons from './HomeIcons';
 
 const Home = () => {
+    useEffect(() => {
+       window.scrollTo(0, 0)
+    }, [])
+
     return (
         <main>
             <ParallaxProvider scrollAxis='vertical'>
