@@ -1,0 +1,41 @@
+.a {
+  &-container {
+    display: flex;
+  }
+
+  &-char {
+    min-height: calc(100vh - $marginTopMain);
+    display: flex;
+    align-items: center;
+    min-width: 25rem;
+
+    & img {
+      width: 25rem;
+    }
+  }
+
+  &-text {
+    &-container {
+      padding: 3rem 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      & div {
+        margin: 1rem 0;
+        font-size: 1.5rem;
+        text-align: justify;
+
+        & span {
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &-link {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+}

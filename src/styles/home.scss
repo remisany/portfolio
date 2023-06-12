@@ -1,38 +1,40 @@
 .h {
-  &-parallax {
-    height: 70vh;
-  }
-
   &-char {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    justify-content: center;
-
-    &-translate {
+    &-hair, &-face, &-smile {
+      height: 100vh;
+      width: 100%;
+      top: 0;
       display: flex;
       justify-content: center;
-      width: 100%;
+
+      & > div, & img {
+        position: absolute;
+        bottom: -21rem;
+        width: 60rem;
+      }
     }
 
-    &-top, &-bottom {
-      width: 60rem;
-      position: absolute;
-      bottom: -21rem;
-    }
-
-    &-top {
+    &-hair {
       & path {
         fill: $lightGreen;
         stroke: $lightGreen;
       }
     }
 
-    &-bottom {
+    &-face, &-smile {
+      position: fixed;
+    }
+
+    &-smile {
+      margin-top: 50vh;
+      height: 50vh;
+      z-index: 3;
+    }
+
+    &-face {
       & path {
         fill: $light;
+        stroke: $light;
       }
     }
   }
@@ -51,7 +53,7 @@
     transition: background-color 0.2s ease-in-out;
 
     &-container {
-      margin-top: 140vh;
+      height: 78vh;
       display: flex;
       justify-content: center;
     }

@@ -11,5 +11,6 @@ body {
   font-weight: 400;
 }
  main {
-   margin-top: 8.4rem;
+   padding-top: $marginTopMain;
+   min-height: 100vh;
  }
