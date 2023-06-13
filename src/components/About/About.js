@@ -1,37 +1,30 @@
-import React, {Fragment} from 'react';
-import {useNavigate} from 'react-router-dom';
-import {Fade} from 'react-awesome-reveal';
+import React from 'react';
+import {useSpring, a} from "@react-spring/web";
 
 //import assets
 import Left from '../../assets/character/left2.png'
 
-//import constants
-import {aboutConstants} from '../../constants/aboutConstants';
-
 //import components
 import AboutIcons from "./AboutIcons";
+import AboutTexts from "./AboutTexts";
 
 const About = () => {
-    const navigate = useNavigate()
+    const spring = useSpring({
+        x: 0,
+        opacity: 1,
+        from: {x: -250, opacity: 0},
+    });
 
-    const redirect = (blank, url) => {
-        blank ? window.open(url, '_blank') : navigate(url)
-    }
-    
     return (
         <main className='a-container'>
-            <Fade direction='left'>
-                <div className='a-char'>
-                    <img src={Left} alt='left part of the character'/>
-                </div>
-            </Fade>
+            <a.div className='a-char' style={spring}>
+                <img src={Left} alt='left part of the character'/>
+            </a.div>
 
-            <div className='a-text-container'>
-                {aboutConstants.texts(redirect).map((text, index) =>
-                    <Fragment key={index}>{text}</Fragment>)}
+            <div>
+                <AboutTexts/>
+                <AboutIcons/>
             </div>
-
-            <AboutIcons/>
         </main>
     )
 }

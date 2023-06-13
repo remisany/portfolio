@@ -25,7 +25,7 @@ const NavBar = () => {
 
                 <div className='nb-end'>
                     <ReactSVG className='nb-end-icon' src={CV}></ReactSVG>
-                    <div className='nb-end-anim' onClick={() => navigate('/a-propos')}>
+                    <div className='nb-end-anim' onClick={() => navigate('/a-propos')} onMouseEnter={() => playerRef.current.play()}>
                         <Player ref={playerRef} src={Hi}/>
                     </div>
                 </div>

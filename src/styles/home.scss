@@ -38,6 +38,10 @@
       }
     }
   }
+
+  &-animate {
+    height: calc(100vh - $marginTopMain);
+  }
 }
 
 .hi {

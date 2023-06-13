@@ -10,7 +10,14 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
 }
- main {
-   padding-top: $marginTopMain;
-   min-height: 100vh;
- }
+
+main {
+  padding-top: $marginTopMain;
+  min-height: 100vh;
+}
+
+.main {
+  &-none {
+    display: none!important;
+  }
+}
