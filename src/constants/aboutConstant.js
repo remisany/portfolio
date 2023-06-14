@@ -32,7 +32,7 @@ function icons () {
     ]
 }
 
-export const aboutConstants = {
+export const aboutConstant = {
     texts: texts,
     icons: icons
 }

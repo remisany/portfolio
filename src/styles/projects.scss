@@ -1,0 +1,127 @@
+.slick {
+  &-slider {
+    width: 70%;
+    margin: 2rem auto 0 auto;
+  }
+
+  &-slide {
+    display: flex!important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-current {
+    & .s {
+      &-container {
+        scale: 1;
+        transition: scale 0.2s ease-in-out;
+      }
+
+      &-icon {
+        opacity: 1;
+        transform: rotate(0);
+        transition: opacity 0.2s ease-in-out, transform 0.6s ease-in-out;
+      }
+
+      &-title {
+        opacity: 1;
+        transition: opacity 0.2s ease-in-out;
+        font-weight: 700;
+      }
+
+      &-tag {
+        scale: 1;
+        transition: all 0.2s ease-in-out;
+        border-color: $light;
+        color: $light;
+
+        &-freelance {
+          transition: all 0.2s ease-in-out;
+          border-color: $lightGreen;
+          color: $lightGreen;
+        }
+      }
+    }
+  }
+
+  &-dots {
+    bottom: -4rem!important;
+
+    & li {
+      & button {
+        &:before {
+          font-size: 1rem!important;
+          color: $light!important;
+          opacity: .5!important;
+          transition: all 0.2s ease-in-out;
+        }
+      }
+    }
+
+    & .slick-active {
+      & button {
+        &:before {
+          opacity: 1!important;
+          transition: opacity 0.2s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.s {
+  &-container {
+    width: 25rem;
+    height: 25rem;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    scale: 0.7;
+    transition: scale 0.2s ease-in-out;
+  }
+
+  &-title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    opacity: .5;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  &-icon {
+    position: absolute;
+    opacity: .5;
+    transform: rotate(120deg);
+    transition: opacity 0.2s ease-in-out, transform 0.6s ease-in-out;
+
+    & svg {
+      height: 24rem;
+
+      & path {
+        fill: $light;
+        stroke: $dark;
+        stroke-width: .4rem;
+      }
+    }
+  }
+
+  &-tag {
+    position: absolute;
+    top: 3rem;
+    left: 1.5rem;
+    font-size: 1.5rem;
+    padding: .2rem 1rem;
+    border: .4rem solid $lightOpacity;
+    color: $lightOpacity;
+    z-index: 2;
+    border-radius: 5rem;
+    background-color: $dark;
+    transition: all 0.2s ease-in-out;
+
+    &-freelance {
+      transition: all 0.2s ease-in-out;
+      border-color: $lightGreenOpacity;
+      color: $lightGreenOpacity;
+    }
+  }
+}

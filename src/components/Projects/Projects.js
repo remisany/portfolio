@@ -1,8 +1,13 @@
 import React from 'react';
 
+//import components
+import Carousel from './Carousel';
+
 const Projects = () => {
     return (
-        <main>Mes projets</main>
+        <main>
+            <Carousel/>
+        </main>
     )
 }
 

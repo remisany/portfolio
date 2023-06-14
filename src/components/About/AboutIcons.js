@@ -2,10 +2,10 @@ import React from 'react';
 import {a, useTrail} from "@react-spring/web";
 
 //import constants
-import {aboutConstants} from "../../constants/aboutConstants";
+import {aboutConstant} from "../../constants/aboutConstant";
 
 const AboutIcons = () => {
-    const icons = aboutConstants.icons();
+    const icons = aboutConstant.icons();
 
     const trail = useTrail(icons.length, {
         config: {mass: 5, tension: 1500, friction: 200},

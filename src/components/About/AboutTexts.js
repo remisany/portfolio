@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom';
 import {useTrail, a} from '@react-spring/web'
 
 //import constants
-import {aboutConstants} from '../../constants/aboutConstants';
+import {aboutConstant} from '../../constants/aboutConstant';
 
 const AboutTexts = () => {
     const navigate = useNavigate()
@@ -12,7 +12,7 @@ const AboutTexts = () => {
         blank ? window.open(url, '_blank') : navigate(url)
     }
 
-    const texts = aboutConstants.texts(redirect);
+    const texts = aboutConstant.texts(redirect);
 
     const trail = useTrail(texts.length, {
         config: {mass: 5, tension: 2000, friction: 200},
