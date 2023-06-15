@@ -24,7 +24,7 @@ const Home = () => {
                     <ReactSVG className='h-char-hair' src={Hair}></ReactSVG>
                     <ReactSVG className='h-char-face' src={Face}></ReactSVG>
                     <div className='h-char-smile'>
-                        <img src={Smile} alt='part of the inner face of the character'/>
+                        <img src={Smile} alt='visage du personnage'/>
                     </div>
                 </a.div>
 

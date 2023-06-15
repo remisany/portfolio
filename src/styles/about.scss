@@ -36,6 +36,12 @@
     &-link {
       text-decoration: underline;
       cursor: pointer;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        color: $lightGreen;
+        transition: all 0.2s ease-in-out;
+      }
     }
   }
 }
@@ -74,7 +80,6 @@
         height: 8rem;
         width: 8rem;
         border-radius: 10rem;
-        transition: background-color 0.2s ease-in-out;
       }
 
       &-clickable {
@@ -82,18 +87,19 @@
 
         & p {
           text-decoration: underline;
+          transition: all 0.2s ease-in-out;
         }
 
         &:hover {
-          & div {
-            transition: background-color 0.2s ease-in-out;
-            background-color: $light;
+          & p {
+            color: $lightGreen;
+            transition: all 0.2s ease-in-out;
           }
 
           & svg {
             & path {
               transition: fill 0.2s ease-in-out;
-              fill: $dark;
+              fill: $lightGreen;
             }
           }
         }
