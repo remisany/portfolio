@@ -1,7 +1,7 @@
 .slick {
   &-slider {
     width: 70%;
-    margin: 2rem auto 0 auto;
+    margin: 0 auto;
   }
 
   &-slide {
@@ -45,7 +45,7 @@
   }
 
   &-dots {
-    bottom: -4rem!important;
+    bottom: -2rem!important;
 
     & li {
       & button {
@@ -95,7 +95,7 @@
     transition: opacity 0.2s ease-in-out, transform 0.6s ease-in-out;
 
     & svg {
-      height: 24rem;
+      height: 20rem;
 
       & path {
         fill: $light;
@@ -122,6 +122,54 @@
       transition: all 0.2s ease-in-out;
       border-color: $lightGreenOpacity;
       color: $lightGreenOpacity;
+    }
+  }
+}
+
+.d {
+  &-container {
+    display: flex;
+    align-items: flex-start;
+    padding: 4.5rem 5rem 0 5rem;
+    width: 100%;
+  }
+
+  &-tag {
+    font-size: 1.5rem;
+    color: $lightGreen;
+    border: .4rem solid $lightGreen;
+    border-radius: 5rem;
+    margin: .5rem;
+    padding: .5rem 1rem;
+
+    &-container {
+      display: flex;
+      flex-wrap: wrap;
+      min-width: 25%;
+      margin-right: 1rem;
+    }
+  }
+
+  &-description {
+    font-size: 1.5rem;
+    text-align: justify;
+
+    &-container {
+      margin-left: 1rem;
+    }
+
+    &-link {
+      margin-top: 2.5rem;
+      width: 100%;
+      font-size: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+
+      & span {
+        font-weight: 700;
+        font-size: 1.5rem;
+        text-decoration: underline;
+      }
     }
   }
 }

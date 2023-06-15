@@ -11,7 +11,7 @@ import {projectsConstant} from '../../constants/projectsConstant';
 //import components
 import Slide from './Slide';
 
-const Carousel = () => {
+const Carousel = ({setIndex}) => {
     const settings = {
         className: 'center',
         centerMode: true,
@@ -21,7 +21,8 @@ const Carousel = () => {
         slidesToShow: 3,
         centerPadding: '0px',
         speed: 500,
-        arrows: false
+        arrows: false,
+        afterChange: index => setIndex(index)
     };
 
     return (
