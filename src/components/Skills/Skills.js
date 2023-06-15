@@ -1,8 +1,13 @@
 import React from 'react';
 
+//import components
+import SkillsList from "./SkillsList";
+
 const Skills = () => {
     return (
-        <main>Mes compétences</main>
+        <main>
+            <SkillsList/>
+        </main>
     )
 }
 
