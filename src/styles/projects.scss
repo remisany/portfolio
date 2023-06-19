@@ -117,10 +117,10 @@
   &-tag {
     position: absolute;
     top: 3rem;
-    left: 1.5rem;
-    font-size: 1.5rem;
+    left: 3rem;
+    font-size: 1.4rem;
     padding: .2rem 1rem;
-    border: .4rem solid $lightOpacity;
+    border: .3rem solid $lightOpacity;
     color: $lightOpacity;
     z-index: 2;
     border-radius: 5rem;
@@ -144,9 +144,9 @@
   }
 
   &-tag {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: $lightGreen;
-    border: .4rem solid $lightGreen;
+    border: .3rem solid $lightGreen;
     border-radius: 5rem;
     margin: .5rem;
     padding: .5rem 1rem;
@@ -160,11 +160,12 @@
   }
 
   &-description {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
     text-align: justify;
 
     & span {
-      font-size: 1.5rem;
+      font-size: 1.4rem;
       font-weight: 700;
     }
 
@@ -175,11 +176,11 @@
 
     &-link {
       margin-top: 2.5rem;
-      font-size: 1.5rem;
+      font-size: 1.4rem;
 
       & span {
         font-weight: 700;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         cursor: pointer;
         text-decoration: underline;
         transition: all 0.2s ease-in-out;

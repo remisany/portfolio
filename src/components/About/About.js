@@ -1,12 +1,12 @@
 import React from 'react';
-import {useSpring, a} from "@react-spring/web";
+import {useSpring, a} from '@react-spring/web';
 
 //import assets
-import Left from '../../assets/character/left2.png'
+import Left from '../../assets/character/left.png'
 
 //import components
-import AboutIcons from "./AboutIcons";
-import AboutTexts from "./AboutTexts";
+import AboutIcons from './AboutIcons';
+import AboutTexts from './AboutTexts';
 
 const About = () => {
     const spring = useSpring({
@@ -18,7 +18,7 @@ const About = () => {
     return (
         <main className='a-container'>
             <a.div className='a-char' style={spring}>
-                <img src={Left} alt='left part of the character'/>
+                <img src={Left} alt='partie gauche du visage du personnage'/>
             </a.div>
 
             <div>

@@ -23,11 +23,12 @@
 
       & div {
         margin: .5rem 0;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         text-align: justify;
+        line-height: 2.1rem;
 
         & span {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
           font-weight: 700;
         }
       }
@@ -108,7 +109,7 @@
       & p {
         color: $light;
         margin-top: 2rem;
-        font-size: 1.5rem;
+        font-size: 1.4rem;
       }
     }
   }

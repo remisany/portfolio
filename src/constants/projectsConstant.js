@@ -23,7 +23,7 @@ const projects = [
     {
         tags: ['Javascript', 'JQuery', 'Templating: TWIG'],
         descriptions: [
-            "Easytips est une solution permettant aux clients d’effectuer des pourboires directement sur les" +
+            "Easytips est une solution permettant aux clients d’effectuer des pourboires directement sur les " +
             "terminaux de paiement électronique (TPE) par carte bancaire.",
             "Dans le cadre de ce projet, j’ai été chargé de <span>développer le back-office</span>, qui présente les différents " +
             "paiements, employés et magasins. En raison de contraintes de temps et de la compatibilité avec le back-end " +
@@ -42,7 +42,7 @@ const projects = [
             "électronique, les vendeurs, les magasins et les produits, ainsi que de visualiser les transactions. Ce " +
             "projet présentait deux défis majeurs à relever. Le premier consistait à <span>réécrire intégralement le code en " +
             "utilisant les pratiques modernes de React</span>, favorisant notamment la maintenabilité. Le deuxième était de " +
-            "span>proposer une nouvelle l’interface plus intuitive</span> capable de concilier les deux principales fonctionnalités " +
+            "<span>proposer une nouvelle l’interface plus intuitive</span> capable de concilier les deux principales fonctionnalités " +
             "du back-office : le paramétrage et les rapports. Il était essentiel de permettre un accès facile et " +
             "efficace aux paramètres de l'application pour effectuer des ajustements personnalisés et de présenter de " +
             "manière claire et compréhensible les éléments graphiques complexes.",
@@ -61,7 +61,7 @@ const projects = [
             "l’émergence du besoin jusqu'au déploiement de l'application. J'ai été confronté à de nombreux défis tout au " +
             "long de ce projet. Tout d'abord, il a fallu <span>comprendre et définir précisément les besoins</span>. Ensuite, il " +
             "fallait <span>concevoir une interface intuitive</span> pour des utilisateurs qui ne sont pas nécessairement familiers " +
-            "avec ce type de plateforme. Aussi, afin de concevoir un système de gestion de comptes, je devais <span>acquérir " +
+            "avec ce type de plateforme. De plus, afin de concevoir un système de gestion de comptes, je devais <span>acquérir " +
             "des connaissances en développement back-end</span>, notamment en ce qui concerne un langage de programmation et " +
             "les bases de données. J'ai donc choisi de développer une <span>MERN Stack App</span> car elle semblait être la solution " +
             "la plus pertinente. Il a également été essentiel de trouver un modèle économique viable pour la plateforme, " +
