@@ -8,8 +8,8 @@
   }
 
   &-content {
-    width: 22%;
-    height: 40rem;
+    width: 28rem;
+    height: 42rem;
     margin: 0 1.5rem;
   }
 }
@@ -34,7 +34,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
-    border: .8rem solid $light;
+    border: .3rem solid $light;
     border-radius: 5rem;
   }
 
@@ -59,7 +59,7 @@
     & img {
       position: absolute;
       width: 100%;
-      border-radius: 0 0 3.5rem 3.5rem;
+      border-radius: 0 0 4rem 4rem;
       bottom: 0;
     }
   }

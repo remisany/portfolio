@@ -12,7 +12,7 @@ const SkillsCard = ({skill, setLoading, index}) => {
 
     return (
         <div className='sc-container' onClick={() => setFlip(prev => !prev)}>
-            <a.div className='sc-front sc-content' style={{ opacity: opacity.to(o => 1 - o), transform }}>
+            <a.div className='sc-front sc-content' style={{opacity: opacity.to(o => 1 - o), transform}}>
                 <div className='sc-title' >{skill.title}</div>
                 <img src={skill.icon} alt={skill.alt} onLoad={() => {
                     setLoading(prev => {
