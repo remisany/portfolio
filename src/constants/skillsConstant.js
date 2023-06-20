@@ -7,7 +7,7 @@ import Soft from '../assets/character/soft.png';
 const skills = [
     {
         title: 'Front-end',
-        tags: ['Animation CSS', 'Appels API : Axios', 'Javascript', 'jQuery', 'React', 'Redux', 'Responsive design', 'Sass', 'Templating : TWIG, EJS', 'Test : React Testing Library', 'Typescript'],
+        tags: ['Animation CSS', 'Requêtes API', 'Javascript', 'jQuery', 'React', 'Redux', 'Responsive design', 'Sass', 'Templating : TWIG, EJS', 'React Testing Library', 'Three.js', 'Typescript', 'WebVR : A-Frame'],
         icon: Front,
         alt: "personnage de face"
     },

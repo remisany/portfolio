@@ -1,0 +1,43 @@
+.tl {
+  &-container {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  &-content {
+    display: flex;
+    flex-direction: column;
+    margin: 0 .8rem;
+  }
+
+  &-child {
+    background-color: $light;
+    border-radius: 5rem;
+    color: $dark;
+    flex-grow: 1;
+    margin-bottom: .8rem;
+
+    &-1 {
+      flex-basis: calc(1 * (100% / 9) - .8rem);
+    }
+
+    &-2 {
+      flex-basis: calc(2 * (100% / 9) - .8rem);
+    }
+
+    &-3 {
+      flex-basis: calc(3 * (100% / 9) - .8rem);
+    }
+
+    &-hidden {
+      visibility: hidden;
+    }
+  }
+}
+
+.dt {
+  &-container {
+    flex-grow: 1;
+  }
+}

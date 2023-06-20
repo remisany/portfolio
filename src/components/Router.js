@@ -5,7 +5,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 const Home = lazy(() => import('./Home/Home'));
 const About = lazy(() => import('./About/About'));
 const NavBar = lazy(() => import('./commons/NavBar'));
-const Journey = lazy(() => import('./Journey/Journey'));
+const Timeline = lazy(() => import('./Timeline/Timeline'));
 const Skills = lazy(() => import('./Skills/Skills'));
 const Projects = lazy(() => import('./Projects/Projects'));
 
@@ -16,7 +16,7 @@ const Router = () => {
             <Suspense fallback={null}>
                 <Routes>
                     <Route path='/' element={<Home/>}/>
-                    <Route path='/mon-parcours' element={<Journey/>}/>
+                    <Route path='/mon-parcours' element={<Timeline/>}/>
                     <Route path='/mes-competences' element={<Skills/>}/>
                     <Route path='/mes-projets' element={<Projects/>}/>
                     <Route path='/a-propos' element={<About/>}/>
