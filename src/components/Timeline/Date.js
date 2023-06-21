@@ -5,9 +5,11 @@ import {timelineConstant} from "../../constants/timelineConstants";
 
 const Date = () => {
     return (
-        <div className='tl-content'>
+        <div className='tl-content dt-content'>
             {timelineConstant.date.map((point, index) => (
-                <div className='dt-container' key={index}>{point}</div>
+                <div className='dt-container' key={index}>
+                    <div className='dt-date'>{point}</div>
+                </div>
             ))}
         </div>
     )

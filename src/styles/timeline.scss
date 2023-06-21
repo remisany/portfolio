@@ -1,43 +1,121 @@
 .tl {
   &-container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
+    margin: 0 auto;
+    width: 80%;
+    padding-top: $marginTopMain + 5.5rem;
+    padding-bottom: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 0.1fr 1fr;
+    grid-gap: 2rem;
   }
 
   &-content {
-    display: flex;
-    flex-direction: column;
-    margin: 0 .8rem;
+    display: grid;
+    grid-template-rows: repeat(20, 1fr);
+    grid-gap: 5rem;
   }
 
   &-child {
-    background-color: $light;
     border-radius: 5rem;
     color: $dark;
-    flex-grow: 1;
-    margin-bottom: .8rem;
+    border: .3rem solid $light;
+    font-size: 1.4rem;
+    padding: 5rem 2rem 2rem 2rem;
+    position: relative;
 
     &-1 {
-      flex-basis: calc(1 * (100% / 9) - .8rem);
+      grid-row: span 1;
     }
 
     &-2 {
-      flex-basis: calc(2 * (100% / 9) - .8rem);
+      grid-row: span 2;
     }
 
     &-3 {
-      flex-basis: calc(3 * (100% / 9) - .8rem);
+      grid-row: span 3;
+    }
+
+    &-4 {
+      grid-row: span 4;
+    }
+
+    &-5 {
+      grid-row: span 5;
+    }
+
+    &-6 {
+      grid-row: span 6;
     }
 
     &-hidden {
       visibility: hidden;
     }
   }
+
+  &-text {
+    color: $light;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin: 1rem 0;
+
+    &-container {
+      display: flex;
+    }
+
+    &-first {
+      width: 40%;
+      margin-right: .8rem;
+    }
+
+    &-second {
+      width: 60%;
+      margin-left: .8rem;
+    }
+  }
+
+  &-title {
+    font-weight: 700;
+    color: $lightGreen;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    margin-top: .5rem;
+    text-align: center;
+  }
+
+  &-datePlace {
+    font-weight: 100;
+  }
+
+  &-icon {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $light;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 5rem;
+    padding: 1rem;
+    left: calc(50% - 4rem);
+    top: -4rem;
+  }
 }
 
 .dt {
   &-container {
-    flex-grow: 1;
+    grid-row: span 2;
+  }
+
+  &-date {
+    font-weight: 700;
+    font-size: 1.4rem;
+    height: 5rem;
+    width: 5rem;
+    border : .2rem solid $light;
+    border-radius: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -2.5rem;
   }
 }
