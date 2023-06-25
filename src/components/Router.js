@@ -4,7 +4,7 @@ import {BrowserRouter, Routes, Route} from 'react-router-dom';
 //import components
 const Home = lazy(() => import('./Home/Home'));
 const About = lazy(() => import('./About/About'));
-const NavBar = lazy(() => import('./commons/NavBar'));
+const NavBar = lazy(() => import('./NavBar/NavBar'));
 const Timeline = lazy(() => import('./Timeline/Timeline'));
 const Skills = lazy(() => import('./Skills/Skills'));
 const Projects = lazy(() => import('./Projects/Projects'));

@@ -1,6 +1,6 @@
 import React, {Fragment} from 'react';
 import Slider from 'react-slick';
-import {useSpring, a} from "@react-spring/web";
+import {useSpring, a} from '@react-spring/web';
 
 //import styles
 import 'slick-carousel/slick/slick.css';
@@ -20,7 +20,7 @@ const Carousel = ({setIndex, setDisplay}) => {
         dots: true,
         swipeToSlide: true,
         slidesToShow: 3,
-        centerPadding: '0px',
+        centerPadding: '0',
         speed: 500,
         arrows: false,
         afterChange: index => {

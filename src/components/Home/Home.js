@@ -1,7 +1,7 @@
 import React from 'react';
 import {ReactSVG} from 'react-svg';
 import {ParallaxProvider} from 'react-scroll-parallax';
-import {useSpring, a} from "@react-spring/web";
+import {useSpring, a} from '@react-spring/web';
 
 //import assets
 import Hair from '../../assets/character/hair.svg';
@@ -12,7 +12,7 @@ import Smile from '../../assets/character/smile.svg';
 import HomeIcons from './HomeIcons';
 
 const Home = () => {
-    const spring = useSpring({
+    const animation = useSpring({
         opacity: 1,
         from: {opacity: 0},
     });
@@ -20,7 +20,7 @@ const Home = () => {
     return (
         <main>
             <ParallaxProvider scrollAxis='vertical'>
-                <a.div style={spring} className="h-animate">
+                <a.div style={animation} className='h-animate'>
                     <ReactSVG className='h-char-hair' src={Hair}></ReactSVG>
                     <ReactSVG className='h-char-face' src={Face}></ReactSVG>
                     <div className='h-char-smile'>

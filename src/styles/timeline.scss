@@ -1,17 +1,19 @@
 .tl {
   &-container {
-    margin: 0 auto;
-    width: 80%;
-    padding-top: $marginTopMain + 5.5rem;
-    padding-bottom: 3rem;
+    margin: calc(50vh - $marginTopMain) auto 0 auto;
+    width: 100vw;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 12rem;
     display: grid;
     grid-template-columns: 1fr 0.1fr 1fr;
     grid-gap: 2rem;
+    overflow-x: hidden;
   }
 
   &-content {
     display: grid;
-    grid-template-rows: repeat(20, 1fr);
+    grid-template-rows: repeat(26, 1fr);
     grid-gap: 5rem;
   }
 
@@ -47,6 +49,10 @@
       grid-row: span 6;
     }
 
+    &-8 {
+      grid-row: span 8;
+    }
+
     &-hidden {
       visibility: hidden;
     }
@@ -58,17 +64,28 @@
     line-height: 2.1rem;
     margin: 1rem 0;
 
+    & span {
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
     &-container {
       display: flex;
     }
 
     &-first {
-      width: 40%;
+      min-width: 32%;
+      max-width: 32%;
+      width: 32%;
       margin-right: .8rem;
     }
 
     &-second {
-      width: 60%;
+      min-width: 68%;
+      max-width: 68%;
+      width: 68%;
       margin-left: .8rem;
     }
   }
@@ -99,11 +116,51 @@
     left: calc(50% - 4rem);
     top: -4rem;
   }
+
+  &-marker {
+    background-color: $light;
+    height: 50vh;
+    width: 2rem;
+    position: fixed;
+    top: 0;
+    left: calc(50% - 1rem);
+    z-index: -1;
+    display: flex;
+    align-items: flex-end;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-left: 1rem solid transparent;
+      border-right: 1rem solid transparent;
+      border-top: 1rem solid $light;
+    }
+
+    &-icon {
+      height: 3rem;
+      width: 3rem;
+
+      & svg {
+        & path {
+          fill: $dark;
+        }
+      }
+    }
+  }
 }
 
 .dt {
   &-container {
     grid-row: span 2;
+    display: flex;
+    justify-content: center;
+
+    &-8 {
+      grid-row: span 8;
+    }
   }
 
   &-date {
@@ -117,5 +174,31 @@
     align-items: center;
     justify-content: center;
     margin-top: -2.5rem;
+    transition: all 0.2s ease-in-out;
+
+    &:before {
+      content: '';
+      height: 5rem;
+      width: 5rem;
+      position: absolute;
+      background-color: $light;
+      border-radius: 5rem;
+      transform: scale(0);
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+      z-index: -1;
+    }
+
+    &-active {
+      position: relative;
+      color: $dark;
+      transition: all 0.2s ease-in-out;
+
+      &:before {
+        transform: scale(1);
+        opacity: 1;
+        transition: all 0.2s ease-in-out;
+      }
+    }
   }
 }

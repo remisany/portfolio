@@ -1,8 +1,8 @@
 import React from 'react';
-import {a, useTrail} from "@react-spring/web";
+import {a, useTrail} from '@react-spring/web';
 
 //import constants
-import {aboutConstant} from "../../constants/aboutConstant";
+import {aboutConstant} from '../../constants/aboutConstant';
 
 const AboutIcons = () => {
     const icons = aboutConstant.icons();
