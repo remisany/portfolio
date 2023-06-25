@@ -1,8 +1,9 @@
 import React, {useEffect, useRef} from 'react';
-import {useSpring, a} from '@react-spring/web';
+import {useSpring, a, useTrail} from '@react-spring/web';
 
 //Import assets
 import {timelineConstant} from '../../constants/timelineConstants';
+import {aboutConstant} from "../../constants/aboutConstant";
 
 const Date = ({dates, setDates}) => {
     const markerRef = useRef(null)
@@ -17,6 +18,15 @@ const Date = ({dates, setDates}) => {
             detectCollision()
         }
     });
+
+    const datesToDisplay = timelineConstant.date;
+
+    const trail = useTrail(datesToDisplay.length, {
+        config: {mass: 5, tension: 2000, friction: 200},
+        opacity: 1,
+        x: 0,
+        from: {opacity: 0, x: 60},
+    })
 
     const detectCollision = () => {
         const markerRect = markerRef.current.getBoundingClientRect()
@@ -44,14 +54,16 @@ const Date = ({dates, setDates}) => {
 
     return (
         <div className='tl-content dt-content'>
-            {timelineConstant.date.map((point, index) => {
+            {trail.map(({...style}, index) => {
+                const point = datesToDisplay[index]
+
                 return(
-                    <div className={`dt-container ${point === '2021' ? 'dt-container-8' : ''}`} key={index}>
+                    <a.div style={style} className={`dt-container ${point === '2021' ? 'dt-container-8' : ''}`} key={index}>
                         <div
                             className={`dt-date ${dates.includes(point) ? 'dt-date-active' : ''}`}
                             ref={ref => (dateRefs.current[index] = ref)}>{point}
                         </div>
-                    </div>
+                    </a.div>
                 )
             })}
 
