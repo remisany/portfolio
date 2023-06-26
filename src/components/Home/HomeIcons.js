@@ -13,17 +13,17 @@ const HomeIcons = () => {
 
     return (
         <div className='hi-icons-container'>
-            <Parallax className='hi-icons-parallax' scale={[0, 2]} translateX={[50, -200]} onClick={() => navigate('/mon-parcours')}>
+            <Parallax className='hi-icons-parallax hi-icons-parallax-first' scale={[0, 1.5]} translateX={[50, -200]} onClick={() => navigate('/mon-parcours')}>
                 <ReactSVG className='hi-icons' src={Journey}></ReactSVG>
                 <div className='hi-icons-title'>Mon parcours</div>
             </Parallax>
 
-            <Parallax className='hi-icons-parallax' scale={[0, 2]} onClick={() => navigate('/mes-competences')}>
+            <Parallax className='hi-icons-parallax' scale={[0, 1.5]} onClick={() => navigate('/mes-competences')}>
                 <ReactSVG className='hi-icons' src={Skills}></ReactSVG>
                 <div className='hi-icons-title'>Mes compétences</div>
             </Parallax>
 
-            <Parallax className='hi-icons-parallax' scale={[0, 2]} translateX={[-50, 200]} onClick={() => navigate('/mes-projets')}>
+            <Parallax className='hi-icons-parallax hi-icons-parallax-last' scale={[0, 1.5]} translateX={[-50, 200]} onClick={() => navigate('/mes-projets')}>
                 <ReactSVG className='hi-icons' src={Projects}></ReactSVG>
                 <div className='hi-icons-title'>Mes projets</div>
             </Parallax>

@@ -2,7 +2,7 @@
   padding: 1.5rem;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   background-color: $dark;
   z-index: 2;
 
@@ -21,6 +21,7 @@
     font-family: 'Pacifico', sans-serif;
     font-size: 2rem;
     cursor: pointer;
+    white-space: nowrap;
 
     &:hover {
       color: transparent;
@@ -109,6 +110,68 @@
       font-size: 1.4rem;
       color: $lightGreen;
       will-change: transform, opacity;
+    }
+  }
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+  .nb {
+    padding: 1rem;
+
+    &-title {
+      font-size: 1.5rem;
+      margin-top: 0;
+    }
+
+    &-end {
+      &-icon {
+        width: 3.5rem;
+        height: 3.5rem;
+        margin-right: -1.25rem;
+
+        & div {
+          margin-top: .4rem;
+        }
+      }
+
+      &-anim {
+        height: 1.5rem;
+        width: 6rem;
+      }
+    }
+  }
+}
+
+//tablets
+@media (min-width: 768px) and (orientation: portrait) {
+
+}
+
+//small screens
+@media (min-width: 1024px) {
+  .nb {
+    padding: 1.5rem;
+
+    &-title {
+      font-size: 2rem;
+      margin-top: -.4rem;
+    }
+
+    &-end {
+      &-icon {
+        width: 4rem;
+        height: 4rem;
+        margin-right: -1rem;
+
+        & div {
+          margin-top: .3rem;
+        }
+      }
+
+      &-anim {
+        height: 2rem;
+        width: 7rem;
+      }
     }
   }
 }

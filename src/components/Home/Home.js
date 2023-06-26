@@ -1,12 +1,10 @@
 import React from 'react';
-import {ReactSVG} from 'react-svg';
 import {ParallaxProvider} from 'react-scroll-parallax';
 import {useSpring, a} from '@react-spring/web';
 
 //import assets
-import Hair from '../../assets/character/hair.svg';
-import Face from '../../assets/character/face.svg';
-import Smile from '../../assets/character/smile.svg';
+import Hair from '../../assets/character/hair.png';
+import Face from '../../assets/character/face.png';
 
 //import components
 import HomeIcons from './HomeIcons';
@@ -21,10 +19,12 @@ const Home = () => {
         <main>
             <ParallaxProvider scrollAxis='vertical'>
                 <a.div style={animation} className='h-animate'>
-                    <ReactSVG className='h-char-hair' src={Hair}></ReactSVG>
-                    <ReactSVG className='h-char-face' src={Face}></ReactSVG>
-                    <div className='h-char-smile'>
-                        <img src={Smile} alt='visage du personnage'/>
+                    <div className='h-char-hair'>
+                        <img src={Hair} alt='visage du personnage'/>
+                    </div>
+
+                    <div className='h-char-face'>
+                        <img src={Face} alt='visage du personnage'/>
                     </div>
                 </a.div>
 
