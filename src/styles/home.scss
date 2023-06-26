@@ -11,7 +11,7 @@
     }
 
     &-hair {
-      height: calc(100dvh - $marginTopMain);
+      height: calc(100svh - $marginTopMain);
       align-items: flex-end;
       bottom: 0;
     }
@@ -23,7 +23,7 @@
   }
 
   &-animate {
-    height: calc(100dvh - $marginTopMain);
+    height: calc(100svh - $marginTopMain);
   }
 }
 
@@ -40,7 +40,7 @@
     transition: background-color 0.2s ease-in-out;
 
     &-container {
-      height: 60dvh;
+      height: 60svh;
       display: flex;
       justify-content: center;
       align-items: start;
@@ -110,7 +110,7 @@
   .hi {
     &-icons {
       &-container {
-        height: 80dvh;
+        height: 80svh;
       }
 
       &-parallax {
@@ -144,7 +144,7 @@
       width: 10rem;
 
       &-container {
-        height: 65dvh;
+        height: 65svh;
       }
 
       & svg {
@@ -195,7 +195,7 @@
       width: 9rem;
 
       &-container {
-        height: 78dvh;
+        height: 78svh;
       }
 
       & svg {
