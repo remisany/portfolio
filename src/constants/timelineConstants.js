@@ -90,18 +90,10 @@ const experience = [
     }
 ]
 
-const keyDate = [
-    {key: '2022', title: "Création d'entreprise"},
-    {key: '2020', title: "Obtention du diplome d'ingénieur"},
-    {key: '2017', title: "Obtention du DUT"},
-    {key: '2014', title: "Obtention du BAC scientifique"},
-]
-
 const date = ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023']
 
 export const timelineConstant = {
     education: education,
     experience: experience,
-    keyDate: keyDate,
     date: date
 }
