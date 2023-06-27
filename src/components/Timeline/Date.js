@@ -29,10 +29,10 @@ const Date = ({dates, setDates}) => {
     })
 
     const detectCollision = () => {
-        const markerRect = markerRef.current.getBoundingClientRect()
+        const markerRect = markerRef.current && markerRef.current.getBoundingClientRect()
 
         dateRefs.current.forEach((dateRef, index) => {
-            const dateRect = dateRef.getBoundingClientRect()
+            const dateRect = dateRef && dateRef.getBoundingClientRect()
             const newDate = timelineConstant.date[index]
 
             if (markerRect.bottom >= dateRect.top) {
