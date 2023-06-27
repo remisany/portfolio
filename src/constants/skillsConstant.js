@@ -25,7 +25,7 @@ const skills = [
     },
     {
         title: 'Soft skills',
-        tags: ['Anglais : TOIEC 850 en 2020', 'Autonomie', 'Curiosité', 'Esprit créatif', 'Méthode agile : SCRUM', 'Percévérance', 'Rigueur', 'Volonté d’apprendre'],
+        tags: ['Anglais : TOIEC 850 en 2020', 'Autonomie', 'Curiosité', 'Esprit créatif', 'Méthode agile : SCRUM', 'Persévérance', 'Rigueur', 'Volonté d’apprendre'],
         icon: Soft,
         alt: "personnage représentant les soft skills"
     }
