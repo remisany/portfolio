@@ -1,5 +1,5 @@
 .nb {
-  padding: 1.5rem;
+  padding: 1rem;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -7,7 +7,7 @@
   z-index: 2;
 
   &-container {
-    padding: .5rem 2rem;
+    padding: .5rem 1.5rem .5rem 2rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -17,9 +17,9 @@
 
   &-title {
     line-height: 2rem;
-    margin-top: -.4rem;
+    margin-top: -.2rem;
     font-family: 'Pacifico', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     white-space: nowrap;
 
@@ -50,9 +50,9 @@
     display: flex;
 
     &-icon {
-      width: 4rem;
+      width: 3rem;
       height: 4rem;
-      margin-right: -1rem;
+      margin-right: -1.25rem;
       cursor: pointer;
       display: flex;
       justify-content: center;
@@ -144,13 +144,12 @@
 
 //tablets
 @media (min-width: 768px) and (orientation: portrait) {
-
-}
-
-//small screens
-@media (min-width: 1024px) {
   .nb {
     padding: 1.5rem;
+
+    &-container {
+      padding: .5rem 1.75rem .5rem 2rem;
+    }
 
     &-title {
       font-size: 2rem;
@@ -159,12 +158,45 @@
 
     &-end {
       &-icon {
-        width: 4rem;
+        width: 3.5rem;
         height: 4rem;
         margin-right: -1rem;
 
         & div {
-          margin-top: .3rem;
+          margin-top: .4rem;
+        }
+      }
+
+      &-anim {
+        height: 2rem;
+        width: 7rem;
+      }
+    }
+  }
+}
+
+//small screens
+@media (min-width: 1024px) {
+  .nb {
+    padding: 1.5rem;
+
+    &-container {
+      padding: .5rem 1.75rem .5rem 2rem;
+    }
+
+    &-title {
+      font-size: 2rem;
+      margin-top: -.4rem;
+    }
+
+    &-end {
+      &-icon {
+        width: 3.5rem;
+        height: 4rem;
+        margin-right: -1rem;
+
+        & div {
+          margin-top: .4rem;
         }
       }
 
