@@ -21,7 +21,7 @@ const projects = [
         link: {title: 'Musée Axelia', url:'https://museeaxelia.fr/'}
     },
     {
-        tags: ['Javascript', 'JQuery', 'Templating: TWIG'],
+        tags: ['Javascript', 'JQuery', 'Templating : TWIG'],
         descriptions: [
             "Easytips est une solution permettant aux clients d’effectuer des pourboires directement sur les " +
             "terminaux de paiement électronique (TPE) par carte bancaire.",
@@ -71,7 +71,7 @@ const projects = [
         link: {title: 'Orthotraînement', url: 'https://orthotrainement.fr/', email: 'test@test.fr', password: 'test'}
     },
     {
-        tags: ['React', 'Typescript', 'Tests: React Testing Library'],
+        tags: ['React', 'Typescript', 'Tests : React Testing Library'],
         descriptions: [
             "Walleety est solution de porte-monnaie électronique qui permet d’effectuer des encaissements à l’aide de " +
             "cartes privatives.",

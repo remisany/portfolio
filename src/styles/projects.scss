@@ -1,6 +1,6 @@
 .slick {
   &-slider {
-    width: 70%;
+    width: 85%;
     margin: 0 auto;
   }
 
@@ -51,7 +51,7 @@
     & li {
       & button {
         &:before {
-          font-size: 1rem!important;
+          font-size: .6rem!important;
           color: $light!important;
           opacity: .5!important;
           transition: all 0.2s ease-in-out;
@@ -80,8 +80,8 @@
 
 .s {
   &-container {
-    width: 25rem;
-    height: 25rem;
+    width: 13rem;
+    height: 13rem;
     display: flex;
     position: relative;
     align-items: center;
@@ -91,10 +91,15 @@
   }
 
   &-title {
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-transform: uppercase;
     opacity: .5;
     transition: opacity 0.2s ease-in-out;
+    display: block;
+    width: 7rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: center;
   }
 
   &-icon {
@@ -104,7 +109,7 @@
     transition: opacity 0.2s ease-in-out, transform 0.6s ease-in-out;
 
     & svg {
-      height: 20rem;
+      height: 10rem;
 
       & path {
         fill: $light;
@@ -116,11 +121,11 @@
 
   &-tag {
     position: absolute;
-    top: 3rem;
-    left: 3rem;
-    font-size: 1.4rem;
+    top: 2rem;
+    left: 1.5rem;
+    font-size: 1rem;
     padding: .2rem 1rem;
-    border: .3rem solid $lightOpacity;
+    border: .15rem solid $lightOpacity;
     color: $lightOpacity;
     z-index: 2;
     border-radius: 5rem;
@@ -139,14 +144,14 @@
   &-container {
     display: flex;
     align-items: flex-start;
-    padding: 4.5rem 5rem 0 5rem;
+    padding: 3rem 2rem 3rem 2rem;
     width: 100%;
   }
 
   &-tag {
-    font-size: 1.4rem;
+    font-size: 1rem;
     color: $lightGreen;
-    border: .3rem solid $lightGreen;
+    border: .15rem solid $lightGreen;
     border-radius: 5rem;
     margin: .4rem;
     padding: .4rem 1rem;
@@ -160,12 +165,12 @@
   }
 
   &-description {
-    font-size: 1.4rem;
+    font-size: 1rem;
     line-height: 2.1rem;
     text-align: justify;
 
     & span {
-      font-size: 1.4rem;
+      font-size: 1rem;
       font-weight: 700;
     }
 
@@ -175,12 +180,12 @@
     }
 
     &-link {
-      margin-top: 2.5rem;
-      font-size: 1.4rem;
+      margin-top: 1.5rem;
+      font-size: 1rem;
 
       & span {
         font-weight: 700;
-        font-size: 1.4rem;
+        font-size: 1rem;
         cursor: pointer;
         text-decoration: underline;
         transition: all 0.2s ease-in-out;
@@ -219,6 +224,193 @@
       right: 28%;
       height: 7rem;
       width: 7rem;
+    }
+  }
+}
+
+@media (min-width: 480px) and (orientation: landscape) {
+  .slick {
+    &-slider {
+      width: 70%;
+    }
+
+    &-dots {
+      & li {
+        & button {
+          &:before {
+            font-size: .8rem!important;
+          }
+        }
+      }
+    }
+  }
+
+  .d {
+    &-container {
+      padding: 3rem 5rem 4rem 5rem;
+    }
+  }
+
+  .s {
+    &-container {
+      width: 18rem;
+      height: 18rem;
+    }
+
+    &-icon {
+      & svg {
+        height: 15rem;
+      }
+    }
+
+    &-tag {
+      top: 3rem;
+      left: 3rem;
+      font-size: 1rem;
+    }
+  }
+}
+
+@media (min-width: 768px) and (orientation: portrait) {
+  .slick {
+    &-slider {
+      width: 85%;
+    }
+
+    &-dots {
+      bottom: -2rem !important;
+
+      & li {
+        & button {
+          &:before {
+            font-size: 1rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  .d {
+    &-container {
+      padding: 4.5rem 5rem 0 5rem;
+    }
+
+    &-tag {
+      font-size: 1.4rem;
+      border: .3rem solid $lightGreen;
+    }
+
+    &-description {
+      font-size: 1.4rem;
+
+      & span {
+        font-size: 1.4rem;
+      }
+
+      &-link {
+        margin-top: 2.5rem;
+        font-size: 1.4rem;
+
+        & span {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .s {
+    &-container {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    &-title {
+      font-size: 1.4rem;
+    }
+
+    &-icon {
+      & svg {
+        height: 20rem;
+      }
+    }
+
+    &-tag {
+      top: 3rem;
+      left: 3rem;
+      font-size: 1.4rem;
+      border: .3rem solid $lightOpacity;
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .slick {
+    &-slider {
+      width: 70%;
+    }
+
+    &-dots {
+      bottom: -2rem !important;
+
+      & li {
+        & button {
+          &:before {
+            font-size: 1rem !important;
+          }
+        }
+      }
+    }
+  }
+
+  .d {
+    &-container {
+      padding: 4.5rem 5rem 0 5rem;
+    }
+
+    &-tag {
+      font-size: 1.4rem;
+      border: .3rem solid $lightGreen;
+    }
+
+    &-description {
+      font-size: 1.4rem;
+
+      & span {
+        font-size: 1.4rem;
+      }
+
+      &-link {
+        margin-top: 2.5rem;
+        font-size: 1.4rem;
+
+        & span {
+          font-size: 1.4rem;
+        }
+      }
+    }
+  }
+
+  .s {
+    &-container {
+      width: 25rem;
+      height: 25rem;
+    }
+
+    &-title {
+      font-size: 1.4rem;
+    }
+
+    &-icon {
+      & svg {
+        height: 20rem;
+      }
+    }
+
+    &-tag {
+      top: 3rem;
+      left: 3rem;
+      font-size: 1.4rem;
+      border: .3rem solid $lightOpacity;
     }
   }
 }
