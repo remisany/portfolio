@@ -1,1 +1,5 @@
-$marginTopMain: 8.4rem;
+$marginTopMain: 7.4rem;
+
+@media (min-width: 768px) {
+  $marginTopMain: 8.4rem;
+}
