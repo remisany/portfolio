@@ -21,7 +21,7 @@ const About = () => {
                 <img src={Left} alt='partie gauche du visage du personnage'/>
             </a.div>
 
-            <div>
+            <div className='a-container-right'>
                 <AboutTexts/>
                 <AboutIcons/>
             </div>
