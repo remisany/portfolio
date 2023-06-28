@@ -25,7 +25,7 @@ function icons () {
             <ReactSVG className='ai-icon' src={Mail}></ReactSVG>
             <p>remi.sany@laposte.net</p>
         </a>,
-        <div className='ai-icon-container ai-icon-container-clickable' onClick={() => window.open('https://www.linkedin.com/in/rémi-sany/', '_blank')}>
+        <div className='ai-icon-container ai-icon-container-clickable' onClick={() => window.open('https://www.linkedin.com/in/remi-sany/', '_blank')}>
             <ReactSVG className='ai-icon' src={Linkedin}></ReactSVG>
             <p>/rémi-sany</p>
         </div>
