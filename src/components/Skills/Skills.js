@@ -10,6 +10,7 @@ import {skillsConstant} from '../../constants/skillsConstant';
 const Skills = () => {
     const [loading, setLoading] = useState(skillsConstant.skills.map(() => true))
     const [display, setDisplay] = useState(false)
+    const [scroll, setScroll] = useState(false)
 
     const trail = useTrail(skillsConstant.skills.length, {
         config: {mass: 5, tension: 2000, friction: 200},
@@ -22,8 +23,13 @@ const Skills = () => {
         !loading.includes(true) && setDisplay(true)
     }, [loading])
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        setScroll(true)
+    }, [])
+
     return (
-        <main className={`skills-container ${display ? 'visible' : 'hidden'}`}>
+        scroll && <main className={`skills-container ${display ? 'visible' : 'hidden'}`}>
             {trail.map(({...style}, index) => (
                 <a.div className='skills-content' style={style} key={index}>
                     <SkillsCard skill={skillsConstant.skills[index]} setLoading={setLoading} index={index}/>
