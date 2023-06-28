@@ -1,6 +1,6 @@
 .tl {
   &-container {
-    margin: calc(50vh - $marginTopMain) auto 0 auto;
+    margin: calc(50svh - $marginTopMain) auto 0 auto;
     width: 100vw;
     padding-right: 3%;
     padding-left: 3%;
@@ -121,7 +121,7 @@
 
   &-marker {
     background-color: $light;
-    height: 50vh;
+    height: 50svh;
     width: 1rem;
     position: fixed;
     top: 0;
@@ -250,6 +250,10 @@
       grid-gap: 2rem;
     }
 
+    &-content {
+      grid-gap: 5rem;
+    }
+
     &-child {
       font-size: 1.4rem;
       border: .3rem solid $light;
@@ -329,6 +333,10 @@
       padding-left: 10%;
       padding-bottom: 12rem;
       grid-gap: 2rem;
+    }
+
+    &-content {
+      grid-gap: 5rem;
     }
 
     &-child {

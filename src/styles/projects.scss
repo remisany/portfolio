@@ -128,7 +128,7 @@
     border: .15rem solid $lightOpacity;
     color: $lightOpacity;
     z-index: 2;
-    border-radius: 5rem;
+    border-radius: 2.5rem;
     background-color: $dark;
     transition: all 0.2s ease-in-out;
 
@@ -152,7 +152,7 @@
     font-size: 1rem;
     color: $lightGreen;
     border: .15rem solid $lightGreen;
-    border-radius: 5rem;
+    border-radius: 2.5rem;
     margin: .4rem;
     padding: .4rem 1rem;
 
@@ -298,6 +298,7 @@
     &-tag {
       font-size: 1.4rem;
       border: .3rem solid $lightGreen;
+      border-radius: 5rem;
     }
 
     &-description {
@@ -340,6 +341,7 @@
       left: 3rem;
       font-size: 1.4rem;
       border: .3rem solid $lightOpacity;
+      border-radius: 5rem;
     }
   }
 }
@@ -371,6 +373,7 @@
     &-tag {
       font-size: 1.4rem;
       border: .3rem solid $lightGreen;
+      border-radius: 5rem;
     }
 
     &-description {

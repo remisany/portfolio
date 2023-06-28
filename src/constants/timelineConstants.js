@@ -6,6 +6,7 @@ import Spie from '../assets/icons/spie.png';
 import Safran from '../assets/icons/safran.png';
 import CIB from '../assets/icons/cib.png';
 import RS from '../assets/icons/rs.png'
+import EDAA from '../assets/icons/EDAA.png'
 
 const education = [
     {key: '2014', icon: {src: "", alt: ""}, title: "", datePlace: [], description: [], link: false, size: '1'},
@@ -39,7 +40,7 @@ const education = [
     },
     {
         key: '2021',
-        icon: {src: "", alt: ""},
+        icon: {src: EDAA, alt: "logo EDAA"},
         title: "Formation graphiste",
         datePlace: ["Oct. 2021 - ...", "EDAA", "À distance"],
         description: ["Formation de graphiste dispensée par l'École D'Art Appliqués à distance.", "Apprentissage des notions et outils liés au graphisme.", "Convaincu de l'importance de la conception graphique dans le domaine du développement front-end, je poursuis activement ma formation pour enrichir mes compétences dans ce domaine."],

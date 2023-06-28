@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {useSpring, a} from "@react-spring/web";
 
 //import components
@@ -12,14 +12,20 @@ import Hand from '../../assets/character/hand.png'
 const Projects = () => {
     const [index, setIndex] = useState(0)
     const [display, setDisplay] = useState(true)
+    const [scroll, setScroll] = useState(false)
 
     const animation = useSpring({
         opacity: 1,
         from: {opacity: 0}
     });
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+        setScroll(true)
+    }, [])
+
     return (
-        <main>
+        scroll && <main>
             <Carousel setIndex={setIndex} setDisplay={setDisplay}/>
             <Detail index={index} display={display}/>
 
