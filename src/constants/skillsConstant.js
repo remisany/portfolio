@@ -13,7 +13,7 @@ const skills = [
     },
     {
         title: 'Back-end',
-        tags: ['API RESTful', 'Firebase', 'Express.js', 'GraphQL', 'MongoDB', 'Node.js'],
+        tags: ['API RESTful', 'Apollo Server', 'Firebase', 'Express.js', 'GraphQL', 'MongoDB', 'Node.js'],
         icon: Back,
         alt: "personnage de dos"
     },

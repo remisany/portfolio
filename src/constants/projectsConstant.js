@@ -1,6 +1,7 @@
 const slides = [
     {tag: 'Freelance', title: "axelia"},
     {tag: 'CIB', title: "easytips"},
+    {tag: 'Freelance', title: "écume"},
     {tag: 'CIB', title: "nomad"},
     {tag: 'Freelance', title: "orthotraînement"},
     {tag: 'CIB', title: "walleety"},
@@ -32,6 +33,21 @@ const projects = [
             "adoptant une approche agile. Mon rôle était de prendre en charge le développement front-end."
         ],
         link: {title: 'CIB Ingénierie', url: 'https://www.cib-ingenierie.fr/'}
+    },
+    {
+        tags: ['Apollo Server', 'Expo', 'GraphQL', 'React Native', 'Typescript', 'Templating : EJS'],
+        descriptions: [
+            "[EN COURS] J’aime beaucoup l’idée d’écrire, mais j’ai du mal à me donner l’impulsion pour le faire," +
+            "c’est pourquoi <span>j’ai eu l’idée d’une application qui m’aiderait</span>. Celle-ci regroupe l’ensemble " +
+            "des créations, que ce soit concernant l’écriture, la photographie ou le dessin.  Elle repose sur deux " +
+            "principes : un système de création de notes et un système de notification paramétrable. <span>Le but étant " +
+            "d’aider à la création en imposant une rigueur</span>. Elle peut également éviter le syndrome de la feuille " +
+            "blanche en proposant des mots, un thème, une citation, qui peuvent aider à libérer l’imagination. " +
+            "L’occasion pour moi d’appréhender une nouvelle compétence : React Native. Également, ayant remarqué que " +
+            "de plus en plus d’offres d’emploi comportaient la notion de GraphQL, j’ai décidé de réaliser le back-end " +
+            "de cette application avec Apollo Server (GraphQL)."
+        ],
+        link: {title: '', url: ''}
     },
     {
         tags: ['Javascript', 'React'],
