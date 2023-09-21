@@ -37,7 +37,7 @@ const projects = [
     {
         tags: ['Apollo Server', 'Expo', 'GraphQL', 'React Native', 'Typescript', 'Templating : EJS'],
         descriptions: [
-            "[EN COURS] J’aime beaucoup l’idée d’écrire, mais j’ai du mal à me donner l’impulsion pour le faire," +
+            "[EN COURS] - J’aime beaucoup l’idée d’écrire, mais j’ai du mal à me donner l’impulsion pour le faire," +
             "c’est pourquoi <span>j’ai eu l’idée d’une application qui m’aiderait</span>. Celle-ci regroupe l’ensemble " +
             "des créations, que ce soit concernant l’écriture, la photographie ou le dessin.  Elle repose sur deux " +
             "principes : un système de création de notes et un système de notification paramétrable. <span>Le but étant " +

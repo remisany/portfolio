@@ -93,7 +93,7 @@ const experience = [
         icon: {src: RS, alt: "logo rémi sany"},
         title: "Développeur full-stack",
         datePlace: ["Nov. 2022 - ...", "Rémi Sany (Freelance)", "Chaponost (69630)"],
-        description: ["Création d’une plateforme destinée aux métiers du paramédical. Développement de l’entièreté du projet en autonomie : front-end et back-end (MERN Stack App).", "Création d'un musée en WEB VR (A-Frame). Projet développé en React (javascript). Application PWA (Progressive Web App)."],
+        description: ["Création d’une plateforme destinée aux métiers du paramédical. Développement de l’entièreté du projet en autonomie : front-end et back-end (MERN Stack App).", "Création d'un musée en WEB VR (A-Frame). Projet développé en React (javascript). Application PWA (Progressive Web App).", "Développement d'application. Projet développé en React Native (typescript) pour Web et Android. Back- end avec Apollo Server."],
         link: true,
         size: '3'
     }
