@@ -69,7 +69,7 @@ const projects = [
             "c'est pourquoi j'ai opté pour un système d'abonnement mensuel géré d'abord avec Stripe, puis avec Mollie. " +
             "Enfin, il a fallu choisir un serveur, le configurer et déployer la plateforme."
         ],
-        link: {title: 'Orthotraînement', url: 'https://orthotrainement.fr/', email: 'test@test.fr', password: 'test'}
+        link: {title: 'Orthotraînement', url: 'https://orthotrainement.fr/'}
     },
     {
         tags: ['React', 'Typescript', 'Tests : React Testing Library'],
