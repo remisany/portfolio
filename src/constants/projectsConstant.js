@@ -1,10 +1,10 @@
 const slides = [
     {tag: 'Freelance', title: "axelia"},
     {tag: 'CIB', title: "easytips"},
-    {tag: 'Freelance', title: "écume"},
     {tag: 'CIB', title: "nomad"},
     {tag: 'Freelance', title: "orthotraînement"},
     {tag: 'CIB', title: "walleety"},
+    {tag: 'Freelance', title: "apprentissage"},
 ]
 
 const projects = [
@@ -33,21 +33,6 @@ const projects = [
             "adoptant une approche agile. Mon rôle était de prendre en charge le développement front-end."
         ],
         link: {title: 'CIB Ingénierie', url: 'https://www.cib-ingenierie.fr/'}
-    },
-    {
-        tags: ['Apollo Server', 'Expo', 'GraphQL', 'React Native', 'Typescript', 'Templating : EJS'],
-        descriptions: [
-            "[EN COURS] - J’aime beaucoup l’idée d’écrire, mais j’ai du mal à me donner l’impulsion pour le faire," +
-            "c’est pourquoi <span>j’ai eu l’idée d’une application qui m’aiderait</span>. Celle-ci regroupe l’ensemble " +
-            "des créations, que ce soit concernant l’écriture, la photographie ou le dessin.  Elle repose sur deux " +
-            "principes : un système de création de notes et un système de notification paramétrable. <span>Le but étant " +
-            "d’aider à la création en imposant une rigueur</span>. Elle peut également éviter le syndrome de la feuille " +
-            "blanche en proposant des mots, un thème, une citation, qui peuvent aider à libérer l’imagination. " +
-            "L’occasion pour moi d’appréhender une nouvelle compétence : React Native. Également, ayant remarqué que " +
-            "de plus en plus d’offres d’emploi comportaient la notion de GraphQL, j’ai décidé de réaliser le back-end " +
-            "de cette application avec Apollo Server (GraphQL)."
-        ],
-        link: {title: '', url: ''}
     },
     {
         tags: ['Javascript', 'React'],
@@ -103,6 +88,25 @@ const projects = [
             "front-end."
         ],
         link: {title: 'CIB Ingénierie', url: 'https://www.cib-ingenierie.fr/'}
+    },
+    {
+        tags: ['Apollo Server', 'Expo', 'GraphQL', 'React Native', 'Typescript', 'Templating : EJS'],
+        descriptions: [
+            "Apprentissage de nouvelles compétences.",
+            "Afin de continuer <span>ma quête de polyvalence</span>, j’ai décidé d’apprendre " +
+            "à <span>créer des applications en React Native</span>. J’ai tout d’abord essayé de développer une application d’aide à " +
+            "la création. Cette idée m’était venue afin d’assouvir mon envie d’écrire et de lutter contre le syndrome " +
+            "de la feuille blanche. J’ai réalisé <span>le back-end avec Apollo Server (GraphQL)</span> car cette notion est de plus " +
+            "en plus fréquente dans les offres d’emploi. Après avoir obtenu la certification « Graph developper » " +
+            "d’Apollo GraphQL et passé quelque temps au développement, j’ai décidé de mettre un terme à ce projet, car " +
+            "je n’étais pas convaincu de mon idée. Néanmoins, je suis content d’avoir pu manipuler ces nouvelles " +
+            "notions et je garde en tête de projet afin de le faire mûrir.",
+            "Aussi, depuis longtemps, j’ai très envie de <span>développer des jeux vidéo</span>. J’ai donc essayé de développer un " +
+            "jeu pour Android. Finalement, en cours de projet, je me suis rendu compte des limites de React Native pour " +
+            "ce cas-là. J’ai donc décidé, convaincu de mon gameplay, de transposer cette idée vers Unity afin de quand " +
+            "même d’obtenir un produit fini, mais cette fois-ci avec les bons outils. Mais ça, c’est une autre histoire…",
+        ],
+        link: {title: '', url: ''}
     },
 ]
 
