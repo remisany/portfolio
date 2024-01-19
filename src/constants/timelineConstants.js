@@ -7,6 +7,7 @@ import Safran from '../assets/icons/safran.png';
 import CIB from '../assets/icons/cib.png';
 import RS from '../assets/icons/rs.png'
 import EDAA from '../assets/icons/EDAA.png'
+import SCANTECH from '../assets/icons/scantech.png'
 
 const education = [
     {key: '2014', icon: {src: "", alt: ""}, title: "", datePlace: [], description: [], link: false, size: '1'},
@@ -46,7 +47,8 @@ const education = [
         description: ["Formation de graphiste dispensée par l'École D'Art Appliqués à distance.", "Apprentissage des notions et outils liés au graphisme.", "Convaincu de l'importance de la conception graphique dans le domaine du développement front-end, je poursuis activement ma formation pour enrichir mes compétences dans ce domaine."],
         link: false,
         size: '8'
-    }
+    },
+    {key: '2023', icon: {src: "", alt: ""}, title: "", datePlace: [], description: [], link: false, size: '2'},
 ]
 
 const experience = [
@@ -96,10 +98,19 @@ const experience = [
         description: ["Création d’une plateforme destinée aux métiers du paramédical. Développement de l’entièreté du projet en autonomie : front-end et back-end (MERN Stack App).", "Création d'un musée en WEB VR (A-Frame). Projet développé en React (javascript). Application PWA (Progressive Web App).", "Développement d'application. Projet développé en React Native (typescript) pour Web et Android. Back- end avec Apollo Server."],
         link: true,
         size: '3'
+    },
+    {
+        key: '2024',
+        icon: {src: SCANTECH, alt: "logo scantech"},
+        title: "Ingénieur développeur front-end",
+        datePlace: ["Déc. 2024 - ...", "Scantech", "La Motte-Servolex (73290)"],
+        description: ["Développement d’une application de visualisation de données pour des lignes de production à destination de l’industrie. Développement en React (javascript). Projet en équipe avec beaucoup d’interaction entre les différentes spécialités."],
+        link: true,
+        size: '2'
     }
 ]
 
-const date = ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023']
+const date = ['2014', '2015', '2016', '2017', '2018', '2019', '2020', '2021', '2022', '2023', '2024']
 
 export const timelineConstant = {
     education: education,

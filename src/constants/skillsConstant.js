@@ -7,7 +7,7 @@ import Soft from '../assets/character/soft.png';
 const skills = [
     {
         title: 'Front-end',
-        tags: ['Animations', 'Javascript', 'jQuery', 'React', 'React Native', 'React Testing Library', 'Redux', 'Requêtes API', 'Responsive design', 'Sass', 'Templating : TWIG, EJS', 'Three.js', 'Typescript', 'WebVR : A-Frame'],
+        tags: ['Animations', 'Electron', 'Javascript', 'jQuery', 'React', 'React Native', 'React Testing Library', 'Redux', 'Requêtes API', 'Responsive design', 'Sass', 'Templating : TWIG, EJS', 'Three.js', 'Typescript', 'WebVR : A-Frame'],
         icon: Front,
         alt: "personnage de face"
     },
@@ -19,7 +19,7 @@ const skills = [
     },
     {
         title: 'Outils',
-        tags: ['Adobe Illustrator', 'Adobe InDesign', 'Adobe Photoshop', 'Expo', 'Jira', 'Postman', 'Versionning : Git', 'Webstorm'],
+        tags: ['Adobe Illustrator', 'Adobe InDesign', 'Adobe Photoshop', 'Expo', 'Jira', 'Linux', 'Postman', 'Versionning : Git', 'Webstorm'],
         icon: Tools,
         alt: "personnage habillé en bricoleur"
     },

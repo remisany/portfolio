@@ -1,6 +1,7 @@
 const slides = [
     {tag: 'Freelance', title: "axelia"},
     {tag: 'CIB', title: "easytips"},
+    {tag: 'Scantech', title: "flexscan"},
     {tag: 'CIB', title: "nomad"},
     {tag: 'Freelance', title: "orthotraînement"},
     {tag: 'CIB', title: "walleety"},
@@ -33,6 +34,19 @@ const projects = [
             "adoptant une approche agile. Mon rôle était de prendre en charge le développement front-end."
         ],
         link: {title: 'CIB Ingénierie', url: 'https://www.cib-ingenierie.fr/'}
+    },
+    {
+        tags: ['Electron', 'E-Chart', 'Javascript', 'React'],
+        descriptions: [
+            "Flexscan est un outil de visualisation de données pour les productions à destination de l'industrie.",
+            "Dans le cadre de ce projet, j’ai intégré une équipe pluridisplinaire en charge du développement de l'intégralité " +
+            "de la solution : mesure, traitement, calcul et affichage des données. Pour ma part, j'ai intégré l'équipe front-end, " +
+            "dont le but est de <span>fournir des interfaces utilisateurs résolument tournées vers l'expérience "+
+            "utilisateur (UX)</span>, pour que les clients analysent les données de production.",
+            "Le défi est grand car le projet est en développement depuis plusieurs années. L'immersion au sein de la " +
+            "grande quantité de code déjà livré est donc plus difficile."
+        ],
+        link: {title: 'Scantech', url: 'https://scantech.com/'}
     },
     {
         tags: ['Javascript', 'React'],
